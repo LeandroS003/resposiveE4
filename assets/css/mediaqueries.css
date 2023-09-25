@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Ubuntu";
+}
+
+@media (max-width: 992px) {
+  .menu-label {
+    display: flex;
+    order: 2;
+  }
+
+  #toggle-menu:checked + .navbar-list{
+    display: flex;
+
+  }
+
+  .navbar-list {
+
+    position: absolute;
+    top: 65px;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 45px 30px;
+    background-color: var(--primary);
+    border: 2px solid red;
+    border-top: 0;
+    display: none;
+    border-radius: 0, 0, 15px, 15px;
+  }
+
+  #hero {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .bq-card {
+    display: none;
+  }
+
+  .hero-info {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero-info h1 {
+    width: 80%;
+  }
+
+  .hero-info p {
+    max-width: 500px;
+  }
+
+  .info-cards-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .contacto h3 {
+    width: 500px;
+  }
+}
+
+@media (max-width:578px) {
+  .navbar-list {
+
+    position: absolute;
+    top: 65px;
+    width: 50%;
+    left: 5%;
+    right: 5%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 5px;
+    background-color: var(--primary);
+    border: 2px solid red;
+    border-top: 0;
+    display: none;
+    border-radius: 0, 0, 15px, 15px;
+  }
+
+  .hero-info p {
+    font-size: 15px;
+    width: 30%;
+    color: var(--primary);
+  }
+
+  .info{
+    width: 10pc;
+  }
+
+  #hero {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .bq-card {
+    display: none;
+  }
+
+  .hero-info {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+}
